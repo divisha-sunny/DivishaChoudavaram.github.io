@@ -120,8 +120,7 @@ img {
 /* --------------------------------------- */
 
 h1,
-h2,
-h3 {
+h2 {
     font-family: 'Jost', sans-serif;
     font-weight: 400;
     line-height: var(--line-height-small);
@@ -159,6 +158,22 @@ h3 {
     margin-bottom: var(--gutter-small);
 }
 
+/* Apply underlines only to h3 headings with the 'subsection-heading' class */
+h3.subsection-heading {
+    position: relative;
+}
+
+h3.subsection-heading::before {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 10rem;
+    background: var(--pink);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
 @media(max-width: 500px) {
     .heading-primary {
         font-size: var(--font-size-large);
@@ -182,6 +197,8 @@ p {
         max-width: var(--container-small-width);
     }
 }
+
+
 
 /* --------------------------------------- */
 /* ----- Buttons and Links ----- */
@@ -560,7 +577,7 @@ body:not(.user-is-tabbing) a:focus {
   
   @media (min-width: 901px) {
     .about__text {
-      flex: 0 0 45%; /* Increase the width of the text section to 45% */
+      flex: 0 0 55%; /* Increase the width of the text section to 60% */
     }
   
     .about__photo-container {
