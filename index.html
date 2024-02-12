@@ -156,7 +156,7 @@
         <div class="work__text">
           <h3>Spotify Song Analysis Dashboard</h3>
           <p>
-            The Spotify Music Analysis Dashboard represents a sophisticated PowerBI visualization tool crafted from original Spotify song data, sourced directly from the Spotify API. This comprehensive dataset encompasses a myriad of song attributes, including popularity, artist information, genre classification, and various key characteristics defining each track. This dashboard unveils insights into factors affecting the popularity of the song and top music trends by genre, artist, and listening patterns. Additionally, this dashboard operates as a live platform, continuously updating with fresh data every hour, ensuring users have access to the most up-to-date information available.
+            The Spotify Music Analysis Dashboard is a live PowerBI visualization tool that is updated every hour. It is crafted from original Spotify song data sourced directly from the Spotify API. This dataset encompasses song attributes, including popularity, artist information, genre classification, and various key characteristics defining each track. The dashboard unveils insights into factors affecting the popularity of the song and top music trends by genre, artist, and listening patterns. An automated pipeline is built using Apache Airflow, which utilizes Python libraries like Pandas and Spotipy to interact with the Spotify API, retrieve data, clean it up, transform it into a usable format, and then load it into an SQLite database. Finally, it's loaded into Power BI for dashboarding to present the insights in a clear and visually appealing way.
           </p>
           <div class="work__links">
             <a href="#" target="_blank" class="link__text">
